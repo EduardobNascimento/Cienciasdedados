@@ -1,0 +1,48 @@
+Descreve as bibliotecas utilizadas a seguir aqui!
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
+
+Importe um toy dataset do scikit learn e explique um pouco sobre ele.
+
+from sklearn.datasets import load_wine
+
+Exiba o seu dataset aqui:
+
+data_filter = df
+df.head()
+
+Verifique dados faltantes aqui:
+
+df = pd.read_csv('/content/wine.data', delimiter=',')
+df
+
+Faça uma análise descritiva aqui:
+
+Após colocar a tabela podemos encontrar as 14 medidas que são respectivas a cada coluna para cada análise química de vinhos realizada.
+
+df.describe()
+
+Faça uma análise de correlação aqui:
+
+import pandas as pd
+import seaborn as sn
+
+data = pd.read_csv("wine.data")
+print(data)
+
+Gere uma tabela cruzando dados interessantes aqui:
+
+pd.crosstab(df['14.23'],df['15.6'])
+
+Gere um gráfico aqui:
+
+correlation = data.corr()
+
+plot = sn.heatmap(correlation, annot = True, fmt=".1f", linewidths=.6)
+plot
